@@ -87,7 +87,7 @@ def docker_cmd() -> Tuple[str, ...]:  # pragma: win32 no cover
     return (
         'docker', 'run',
         '--rm',
-        *get_docker_user(),
+        # *get_docker_user(),
         # https://docs.docker.com/engine/reference/commandline/run/#mount-volumes-from-container-volumes-from
         # The `Z` option tells Docker to label the content with a private
         # unshared label. Only the current container can use a private volume.
